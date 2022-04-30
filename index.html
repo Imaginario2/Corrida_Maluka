@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Corrida de Carros</title>
+    <!-- Lib -->
+    <script src="./lib/p5.min.js"></script>
+    <script src="./lib/p5.dom.min.js"></script>
+    <script src="./lib/p5.sound.min.js"></script>
+    <script src="./lib/p5.play.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Firebase SDK CODE ADD BELOW -->
+    <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-database.js"></script>
+    
+    
+    <script>
+    var firebaseConfig = {
+    apiKey: "AIzaSyB55DLhcEqF2qJ_vJ3OPexjFxHp4_UA8l0",
+    authDomain: "corrida-maluca-b0a4c.firebaseapp.com",
+    databaseURL: "https://corrida-maluca-b0a4c-default-rtdb.firebaseio.com",
+    projectId: "corrida-maluca-b0a4c",
+    storageBucket: "corrida-maluca-b0a4c.appspot.com",
+    messagingSenderId: "800773641913",
+    appId: "1:800773641913:web:b93b928eb4b2b398d06d68"
+    };
+    
+      // Inicializar Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+  </head>
+  <body>
+    <script src="./js/Game.js"></script>
+    <script src="./js/Form.js"></script>
+    <script src="./js/Player.js"></script>
+    <script src="./sketch.js"></script>
+  </body>
+</html>
